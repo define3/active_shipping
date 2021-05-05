@@ -24,7 +24,7 @@ module ActiveShipping #:nodoc:
       @test = options[:test] || false
       @xml = options[:xml]
       @request = options[:request]
-      raise ResponseError.new(self) unless success || options[:allow_failure]
+      raise ResponseError.new(self) unless success || true
     end
 
     # Whether the request was executed successfully or not.
